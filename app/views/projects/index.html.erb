@@ -1,9 +1,11 @@
-<% @projects.each do |project| %>
-    <div>
-        <p>Nombre: <%= project.name %></p>
-        <p>Descripción: <%= project.description %></p>
-        <p>Fecha Inicio: <%= project.date_begin %></p>
-        <p>Fecha Termino: <%= project.date_end %></p>
-        <p>Estado: <%= project.state %>
-    </div>
-<% end %>
+<div class="row">
+    <% @projects.each do |project| %>
+        <div class="box col-md-4">
+            <p>Nombre: <%= project.name %></p>
+            <p>Descripción: <%= project.description %></p>
+            <p>Fecha Inicio: <%= project.date_begin %></p>
+            <p>Fecha Termino: <%= project.date_end %></p>
+            <p>Estado: <%= project.state %>
+        </div>
+    <% end %>
+<div>
