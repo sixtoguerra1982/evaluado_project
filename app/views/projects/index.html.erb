@@ -1,3 +1,33 @@
+<%= form_tag(projects_path, method: "post") do %>
+     <div class="form-group">
+        <%= label_tag(:name, "Nombre") %>
+        <%= text_field_tag(:name) %>
+    </div>
+    <div class="form-group">
+        <%= label_tag(:description, "Descripción") %>
+        <%= text_field_tag(:description) %>
+    </div>
+    <div class="form-group">
+        <%= label_tag(:date_begin, "Fecha Inicio") %>
+        <%= date_field_tag :date_begin %>
+    </div>
+
+    <div class="form-group">
+        <%= label_tag(:date_end, "Fecha Termino") %>
+        <%= date_field_tag :date_end  %>
+    </div>
+
+    <div class="form-group">
+        <%= label_tag(:state) %>
+        <%= select_tag(:state, options_for_select([:propuesta , :en_progreso , :terminado], "propuesta"))  %>
+    </div>
+
+
+ <%= submit_tag("Enviar") %>
+<% end %>
+
+
+
 <div class="row">
     <% @projects.each do |project| %>
         <div class="box col-md-4">
