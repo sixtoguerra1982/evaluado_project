@@ -1,0 +1,9 @@
+<% @projects.each do |project| %>
+    <div>
+        <p>Nombre: <%= project.name %></p>
+        <p>Descripción: <%= project.description %></p>
+        <p>Fecha Inicio: <%= project.date_begin %></p>
+        <p>Fecha Termino: <%= project.date_end %></p>
+        <p>Estado: <%= project.state %>
+    </div>
+<% end %>
