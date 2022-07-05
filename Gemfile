@@ -63,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #01 -07-2022
 gem 'faker'
+
+# 04-07-2022
+gem 'kaminari'

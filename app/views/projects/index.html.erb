@@ -26,7 +26,7 @@
  <%= submit_tag("Enviar") %>
 <% end %>
 
-
+<%= paginate @projects %>
 
 <div class="row">
     <% @projects.each do |project| %>
@@ -38,4 +38,6 @@
             <p>Estado: <%= project.state %>
         </div>
     <% end %>
+    
 <div>
+
